@@ -6308,3 +6308,261 @@ ActionController::RoutingError (No route matches [GET] "/assets/images/submit2.p
   Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (3.3ms)
   Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
   Rendered /Library/Ruby/Gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (39.9ms)
+
+
+Started POST "/data/form" for ::1 at 2015-02-08 10:37:58 -0800
+Processing by DataController#form as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DzDIjTV2ieZH+vqrOje1i89tZRnqsLwQwYok1VYG0RBRNqUkdHDnQ5oyObi7lZ83H8pq/Vi2QSs0QOMjm6aE1Q==", "data"=>{"type"=>"tdist", "srs"=>"1", "indep"=>"0", "samp_size"=>"1", "pop_size"=>"1", "d"=>".9", "conf_level"=>"1", "crit"=>"1"}, "commit"=>"Submit"}
+  Rendered data/form.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 26ms
+
+ActionView::Template::Error (undefined method `merge' for :title:Symbol):
+    30:  
+    31: 	<p>
+    32: 		<%= f.label :d, "Input Proportion" %>
+    33: 		<%= f.text_area :d, :title %>
+    34: 	</p>
+    35:  
+    36: 	<p>
+  app/views/data/form.html.erb:33:in `block in _app_views_data_form_html_erb__431753614608885199_70272146115980'
+  app/views/data/form.html.erb:1:in `_app_views_data_form_html_erb__431753614608885199_70272146115980'
+
+
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.2ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (17.7ms)
+
+
+Started POST "/data/form" for ::1 at 2015-02-08 10:38:58 -0800
+Processing by DataController#form as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DzDIjTV2ieZH+vqrOje1i89tZRnqsLwQwYok1VYG0RBRNqUkdHDnQ5oyObi7lZ83H8pq/Vi2QSs0QOMjm6aE1Q==", "data"=>{"type"=>"tdist", "srs"=>"1", "indep"=>"0", "samp_size"=>"1", "pop_size"=>"1", "d"=>".9", "conf_level"=>"1", "crit"=>"1"}, "commit"=>"Submit"}
+  Rendered data/form.html.erb within layouts/application (12.0ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `image_submit' for #<#<Class:0x007fd304997a58>:0x0000000546e3a8>):
+    35:  
+    36: 	<p>
+    37: 		<%= f.submit "Submit" %>
+    38:       <%=  image_submit "submit2.png" %>
+    39:       <input alt="" src="/assets/images/submit2.png" type="image" />
+    40: 	</p>
+    41: <% end %>
+  app/views/data/form.html.erb:38:in `block in _app_views_data_form_html_erb__431753614608885199_44231540'
+  app/views/data/form.html.erb:1:in `_app_views_data_form_html_erb__431753614608885199_44231540'
+
+
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.9ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (17.2ms)
+
+
+Started GET "/data/form" for ::1 at 2015-02-08 10:39:15 -0800
+Processing by DataController#form as HTML
+  Rendered data/form.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `image_submit' for #<#<Class:0x007fd304997a58>:0x007fd30559a5f8>):
+    35:  
+    36: 	<p>
+    37: 		<%= f.submit "Submit" %>
+    38:       <%=  image_submit "submit2.png" %>
+    39:       <input alt="" src="/assets/images/submit2.png" type="image" />
+    40: 	</p>
+    41: <% end %>
+  app/views/data/form.html.erb:38:in `block in _app_views_data_form_html_erb__431753614608885199_44231540'
+  app/views/data/form.html.erb:1:in `_app_views_data_form_html_erb__431753614608885199_44231540'
+
+
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.0ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.5ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (17.0ms)
+
+
+Started GET "/data/form" for ::1 at 2015-02-08 10:40:28 -0800
+Processing by DataController#form as HTML
+  Rendered data/form.html.erb within layouts/application (13.0ms)
+Completed 500 Internal Server Error in 23ms
+
+ActionView::Template::Error (undefined method `image_submit' for #<ActionView::Helpers::FormBuilder:0x007fe3a09c8228>):
+    35:  
+    36: 	<p>
+    37: 		<%= f.submit "Submit" %>
+    38:       <%=  f.image_submit "submit2.png" %>
+    39:       <input alt="" src="/assets/images/submit2.png" type="image" />
+    40: 	</p>
+    41: <% end %>
+  app/views/data/form.html.erb:38:in `block in _app_views_data_form_html_erb__1627325380086012236_70307814384720'
+  app/views/data/form.html.erb:1:in `_app_views_data_form_html_erb__1627325380086012236_70307814384720'
+
+
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.2ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (17.6ms)
+
+
+Started GET "/data/form" for ::1 at 2015-02-08 10:41:17 -0800
+Processing by DataController#form as HTML
+  Rendered data/form.html.erb within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `image_submit_tag' for #<ActionView::Helpers::FormBuilder:0x007f846c9c8770>):
+    35:  
+    36: 	<p>
+    37: 		<%= f.submit "Submit" %>
+    38:       <%=  f.image_submit_tag "submit2.png" %>
+    39:       <input alt="" src="/assets/images/submit2.png" type="image" />
+    40: 	</p>
+    41: <% end %>
+  app/views/data/form.html.erb:38:in `block in _app_views_data_form_html_erb__2477419024433018585_70103367230960'
+  app/views/data/form.html.erb:1:in `_app_views_data_form_html_erb__2477419024433018585_70103367230960'
+
+
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.0ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.6ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (17.3ms)
+
+
+Started GET "/data/form" for ::1 at 2015-02-08 10:41:38 -0800
+Processing by DataController#form as HTML
+  Rendered data/form.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 2416ms (Views: 2410.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/data-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/welcome-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation_and_overrides-4d7a7d91c691c97bf5159f05ef2ac3a4.css?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/application-6dfd43b0576d50f4e3b815edf13a3393.css?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/vendor/modernizr-ab036539ab2eac66b636accb8d06d77b.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation-013a9ecfcbd0d277665f83c66e076e18.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.abide-cecd3b8dfdb9535c145e3160cca57cae.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.accordion-07d483c126d868809345e4abbcfd54a5.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.alert-e54c2d9000574a39e07b2e6ede6ae0f6.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.clearing-b0828edefaad3278cd85c2faf6fd20ef.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.dropdown-c6b22cf8e5474c59dc0bc19e2d290da5.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.interchange-adf4ca4cb9a1f36677701d7d06489ead.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.joyride-7f23c30298ef55f2db505f357bd4a799.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.magellan-8cd3c13f48f6d78fb172bb5200551918.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.offcanvas-0c2112e52f2de840e27058c4912dd869.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.orbit-925ec65dcf6be03dd5c7a1d472845b27.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.reveal-7bd8d9ca180151af16ff7678033f8212.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.slider-66a6fcccc01097ba84b9e9fb84a429ef.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.tab-0d9dd6504af28bc75bdb999fbb120872.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.tooltip-5214a0ecffb0be84dc9247c31455ef50.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.topbar-ba04adaaf787a047a2bc9195842bb938.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation/foundation.equalizer-b93ba11c4146c58dd7d95ba14769e640.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/foundation-cf9c2be01a146b330f05b712f6779903.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/data-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/welcome-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/application-c5421f601700c1e73f067692fcebddd2.js?body=1" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/submit2-599d2c7ed331ec242f1c2f2780d24efe.png" for ::1 at 2015-02-08 10:41:41 -0800
+
+
+Started GET "/assets/images/submit2.png" for ::1 at 2015-02-08 10:41:41 -0800
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/submit2.png"):
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:22:in `middleware_call'
+  web-console (2.0.0) lib/action_dispatch/debug_exceptions.rb:13:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.0) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.0) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.0) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.0) lib/rails/engine.rb:518:in `call'
+  railties (4.2.0) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_route.html.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/routes/_table.html.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /usr/lib/ruby/gems/2.2.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/routing_error.html.erb within rescues/layout (26.4ms)
+
+
+Started GET "/assets/background1-d2b01e78cb1ea9f40748a292639b7d4b.jpeg" for ::1 at 2015-02-08 10:41:41 -0800
