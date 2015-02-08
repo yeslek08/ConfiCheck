@@ -1,0 +1,23 @@
+<%= form_tag({controller: "data", action: "form"}, method: "get") do %>
+
+	<p>
+		<%= check_box_tag(:srs) %>
+		<%= label_tag(:srs, "Simple random sample") %>
+		<%= check_box_tag(:indep) %>
+		<%= label_tag(:indep, "Independent") %>
+	</p>
+
+	<p>
+		<%= label_tag(:pop_size, "Population size") %>
+		<%= text_field(:pop_size, "pop_size") %>
+	</p>
+ 
+	<p>
+		<%= label_tag(:d, "Input Data") %>
+		<%= text_area(:d, :title) %>
+	</p>
+ 
+	<p>
+		<%= submit_tag("Submit") %>
+	</p>
+<% end %>
