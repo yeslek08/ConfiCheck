@@ -1,15 +1,24 @@
 <h1>ConfiCheck</h1>
 
+<p>
+	Welcome to ConfiCheck! When you have data of a sample, you cannot immediately generalize the characteristics
+	of the data to represent the characteristics of the whole population. You must make a confidence interval,
+	which is what we can help you with.
+</p>
+
+<p>
+	What do you want to do?
+</p>
+
 <form action="/data/form" method="post">
 
   <%= form_tag("/data/form") do %>
     <%= radio_button_tag(:dist, "t_dist") %>
-    <%= label_tag(:t_dist, "t dist") %>
+    <%= label_tag(:t_dist, "Find average of a population!") %>
+
     <%= radio_button_tag(:dist, "p_hat") %>
-    <%= label_tag(:p_hat, "p hat") %>
+    <%= label_tag(:p_hat, "Find proportion of a population!") %>
+</form>
 
-    <input type="submit" value="Submit!" />
-  <% end %>
-
-</div>
-
+<input type="submit" value="Submit!" />
+<% end %>

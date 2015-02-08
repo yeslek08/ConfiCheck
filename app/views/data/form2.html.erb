@@ -10,11 +10,6 @@
 	</p>
 
 	<p>
-		<%= f.label :samp_size, "Sample size" %>
-		<%= f.text_field :samp_size %>
-	</p>
-
-	<p>
 		<%= f.label :pop_size, "Population size" %>
 		<%= f.text_field :pop_size %>
     </p>
@@ -25,13 +20,13 @@
     </p>
 
     <p>
-      <%= f.label :z_crit, "Z critical value" %>
-	  <%= f.label :z_crit, "This is the Z-score corresponding to your confidence level." %>
-      <%= f.text_field :z_crit %>
+      <%= f.label :t_crit, "T critical value" %>
+	  <%= f.label :t_crit, "This is the T-score corresponding to your sample size and confidence level." %>
+      <%= f.text_field :t_crit %>
 	</p>
  
 	<p>
-		<%= f.label :d, "Input Proportion" %>
+		<%= f.label :d, "Input Data (one observation on each line)" %>
 		<%= f.text_area :d %>
 	</p>
  

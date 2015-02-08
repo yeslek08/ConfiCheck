@@ -17,4 +17,5 @@ class DataController < ApplicationController
 			return t.calculations(@crit)
 		end
 	end
+
 end
