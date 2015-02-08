@@ -10,15 +10,11 @@
 	What do you want to do?
 </p>
 
-<form action="/data/form" method="post">
-
-  <%= form_tag("/data/form") do %>
-    <%= radio_button_tag(:dist, "t_dist") %>
-    <%= label_tag(:t_dist, "Find average of a population!") %>
-
-    <%= radio_button_tag(:dist, "p_hat") %>
-    <%= label_tag(:p_hat, "Find proportion of a population!") %>
-</form>
+	<%= form_tag "/data/form", method: "get" do %>
+    <%= radio_button_tag :type, "tdist" %>
+    <%= label_tag :type_tdist, "Find average of a population!" %>
+    <%= radio_button_tag :type, "phat" %>
+    <%= label_tag :type_phat, "Find proportion of a population!" %>
 
 <input type="submit" value="Submit!" />
 <% end %>

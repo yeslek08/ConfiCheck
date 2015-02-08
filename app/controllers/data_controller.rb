@@ -2,8 +2,8 @@ require_all 'stats/'
 
 class DataController < ApplicationController
 	def form
-		if params[:dist] && params[:dist] == "t_dist"
-		redirect_to "/data/form2"
+		if params[:type] && params[:type] == "t_dist"
+			redirect_to "/data/form2"
 		end
 	end
 
@@ -18,4 +18,7 @@ class DataController < ApplicationController
 		end
 	end
 
+	def outcome
+
+	end
 end
