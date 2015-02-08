@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   get 'welcome/index'
 
-  get 'data/form'
+  get 'data/form' => 'data#form'
+  post 'data/form' => 'data#form'
+  get 'data/form2' => 'data#form2'
+  post 'data/form2' => 'data#form2'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

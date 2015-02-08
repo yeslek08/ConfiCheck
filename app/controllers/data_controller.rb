@@ -1,6 +1,7 @@
 require_all 'stats/'
 
 class DataController < ApplicationController
+<<<<<<< Updated upstream
 	attr_accessor :type
 	attr_accessor :srs
 	attr_accessor :indep
@@ -34,4 +35,13 @@ class DataController < ApplicationController
 			return t.calculations(@crit)
 		end
 	end
+=======
+  def form
+    @greeting = "hi"
+
+    if params[:dist] && params[:dist] == "t_dist"
+      redirect_to "/data/form2"
+    end
+  end
+>>>>>>> Stashed changes
 end

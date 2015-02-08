@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <%= form_for :data, :url => {:action => "form"} do |f| %>
 	<div class="large-6 columns">
 		<h1> ConfiCheck </h1>
@@ -27,4 +28,46 @@
 		<%= f.text_field :crit %>
 		<%= f.submit "Submit" %>
 	</div>
+=======
+<%= form_tag({controller: "data", action: "form"}, method: "get") do %>
+    <p>
+      <%= @greeting %>
+    </p>
+	<p>
+		<%= check_box_tag(:srs) %>
+		<%= label_tag(:srs, "Simple random sample?") %>
+    </p>
+
+    <p>
+		<%= check_box_tag(:indep) %>
+		<%= label_tag(:indep, "Independent?") %>
+	</p>
+
+	<p>
+		<%= label_tag(:pop_size, "Population size") %>
+		<%= text_field(:pop_size, "pop_size") %>
+    </p>
+
+    <p>
+      <%= label_tag(:conf_level, "Confidence Level (i.e. 95%)") %>
+      <%= text_field(:conf_level, "conf_level") %>
+    </p>
+
+    <p>
+      <%= label_tag(:z_crit, "Z critical value") %>
+      <%= label_tag(:z_crit, "This is the Z-score corresponding to your confidence level.") %>
+      <%= text_field(:z_crit, "z_crit") %>
+	</p>
+ 
+	<p>
+		<%= label_tag(:d, "Input Proportion") %>
+		<%= text_area(:d, :title) %>
+	</p>
+ 
+	<p>
+		<%= submit_tag("Submit") %>
+      <%=  image_submit_tag("submit2.png")%>
+      <input alt="" src="/assets/images/submit2.png" type="image" />
+	</p>
+>>>>>>> Stashed changes
 <% end %>

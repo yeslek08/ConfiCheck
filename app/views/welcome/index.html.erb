@@ -1,1 +1,15 @@
 <h1>ConfiCheck</h1>
+
+<form action="/data/form" method="post">
+
+  <%= form_tag("/data/form") do %>
+    <%= radio_button_tag(:dist, "t_dist") %>
+    <%= label_tag(:t_dist, "t dist") %>
+    <%= radio_button_tag(:dist, "p_hat") %>
+    <%= label_tag(:p_hat, "p hat") %>
+
+    <input type="submit" value="Submit!" />
+  <% end %>
+
+</div>
+
