@@ -2,8 +2,6 @@ require_all 'stats/'
 
 class DataController < ApplicationController
 	def form
-    	@greeting = "hi"
-
 		if params[:dist] && params[:dist] == "t_dist"
 		redirect_to "/data/form2"
 		end
