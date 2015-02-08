@@ -9,14 +9,14 @@ class Phat
 	end
 
 	def normality
-		if n * p >= higher && n * (1-p) >= higher
+		if @n * @p >= higher && @n * (1-@p) >= higher
 			return true
 		end
 		return false
 	end
 
-	def calc_conf(zcrit)
-		margin_error = (p * (1-p)/n) ** 0.5
+	def calc_conf (zcrit)
+		margin_error = (@p * (1-@p)/@n) ** 0.5
 		return margin_error
 	end
 

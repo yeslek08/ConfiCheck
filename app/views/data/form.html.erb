@@ -1,38 +1,32 @@
 <%= form_for :data, :url => {:action => "form"} do |f| %>
-	<p>
-		<%= f.radio_button :type, "tdist", :checked => true %>
+	<div class="large-6 columns">
+		<h1> ConfiCheck </h1>
+		<%= f.radio_button :type, "tdist" %>
 		<%= f.label :type_tdist, "T Distribution" %>
 		<%= f.radio_button :type, "phat" %>
 		<%= f.label :type_phat, "Proportion" %>
-	</p>
+	</div>
 
-	<p>
+	<div class="large-6 columns">
 		<%= f.check_box :srs %>
 		<%= f.label :srs, "Simple random sample" %>
 		<%= f.check_box :indep %>
 		<%= f.label :indep, "Independent" %>
-	</p>
+	</div>
 
-	<p>
+	<div class="large-12 columns">
 		<%= f.label :samp_size, "Sample size" %>
 		<%= f.text_field :samp_size %>
 		<%= f.label :pop_size, "Population size" %>
 		<%= f.text_field :pop_size %>
-	</p>
- 
-	<p>
 		<%= f.label :d, "Input Data" %>
 		<%= f.text_area :d %>
-	</p>
-
-	<p>
 		<%= f.label :conf_level, "Confidence Level" %>
 		<%= f.text_field :conf_level %>
 		<%= f.label :crit, "t* value (t distribution) or zcrit (proportion)" %>
 		<%= f.text_field :crit %>
-	</p>
- 
-	<p>
-		<%= f.submit "Submit" %>
-	</p>
+		<a href="#" class="button">
+			Submit
+		</a>
+	</div>
 <% end %>
