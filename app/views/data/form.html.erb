@@ -1,23 +1,38 @@
-<%= form_tag({controller: "data", action: "form"}, method: "get") do %>
-
+<%= form_for :data, :url => {:action => "form"} do |f| %>
 	<p>
-		<%= check_box_tag(:srs) %>
-		<%= label_tag(:srs, "Simple random sample") %>
-		<%= check_box_tag(:indep) %>
-		<%= label_tag(:indep, "Independent") %>
+		<%= f.radio_button :type, "tdist", :checked => true %>
+		<%= f.label :type_tdist, "T Distribution" %>
+		<%= f.radio_button :type, "phat" %>
+		<%= f.label :type_phat, "Proportion" %>
 	</p>
 
 	<p>
-		<%= label_tag(:pop_size, "Population size") %>
-		<%= text_field(:pop_size, "pop_size") %>
+		<%= f.check_box :srs %>
+		<%= f.label :srs, "Simple random sample" %>
+		<%= f.check_box :indep %>
+		<%= f.label :indep, "Independent" %>
+	</p>
+
+	<p>
+		<%= f.label :samp_size, "Sample size" %>
+		<%= f.text_field :samp_size %>
+		<%= f.label :pop_size, "Population size" %>
+		<%= f.text_field :pop_size %>
 	</p>
  
 	<p>
-		<%= label_tag(:d, "Input Data") %>
-		<%= text_area(:d, :title) %>
+		<%= f.label :d, "Input Data" %>
+		<%= f.text_area :d %>
+	</p>
+
+	<p>
+		<%= f.label :conf_level, "Confidence Level" %>
+		<%= f.text_field :conf_level %>
+		<%= f.label :crit, "t* value (t distribution) or zcrit (proportion)" %>
+		<%= f.text_field :crit %>
 	</p>
  
 	<p>
-		<%= submit_tag("Submit") %>
+		<%= f.submit "Submit" %>
 	</p>
 <% end %>
